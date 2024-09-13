@@ -7,7 +7,22 @@ class Scooter {
     this.serial = Scooter.nextSerial;
     Scooter.nextSerial;
     this.charge = 0;
-    this.isBroken = true;
+    this.isBroken = false;
+  }
+
+  rent(user) {
+    if(this.charge > 20 && this.isBroken === false) {
+      this.user = user;
+    } else {
+      throw new RuntimeError("scooter needs to charge or scooter needs repair");
+    }
+  }
+
+
+  dock(station) {
+    
+    return station;
+
   }
 }
 
