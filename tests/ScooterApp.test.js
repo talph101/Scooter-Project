@@ -1,5 +1,6 @@
 const User = require('../src/User')
 const ScooterApp = require('../src/ScooterApp')
+import {describe, it, expect} from '@jest/globals'
 
 const scooterApp = new ScooterApp()
 // ScooterApp tests here

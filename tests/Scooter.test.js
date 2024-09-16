@@ -1,4 +1,5 @@
 const Scooter = require('../src/Scooter')
+import {describe, it, expect} from '@jest/globals'
 
 // typeof scooter === object
 describe('scooter object', () => {
